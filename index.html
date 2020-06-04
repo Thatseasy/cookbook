@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--Bootstrap CSS-->
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="custom.css" />
     <title>Cookbook</title>
   </head>
   <body>
+    <!--Navbar-->
     <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
       <a class="navbar-brand" href="#"
         ><img src="logo.png" alt="Cookbook" width="250px"
@@ -23,19 +25,358 @@
       >
         <span class="navbar-toggler-icon"></span>
       </button>
-
       <div class="collapse navbar-collapse" id="navbarsExample04">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#">Home</a>
+            <a class="nav-link" href="index.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
+            <a class="nav-link" href="about.html">About</a>
           </li>
         </ul>
       </div>
     </nav>
-
+    <!--Main-->
+    <main class="container">
+      <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <a
+            class="nav-link active"
+            id="breakfast-tab"
+            data-toggle="tab"
+            href="#breakfast"
+            role="tab"
+            aria-controls="breakfast"
+            aria-selected="true"
+            >Breakfasts</a
+          >
+        </li>
+        <li class="nav-item" role="presentation">
+          <a
+            class="nav-link"
+            id="lunch-tab"
+            data-toggle="tab"
+            href="#lunch"
+            role="tab"
+            aria-controls="lunch"
+            aria-selected="false"
+            >Lunch</a
+          >
+        </li>
+        <li class="nav-item" role="presentation">
+          <a
+            class="nav-link"
+            id="dinner-tab"
+            data-toggle="tab"
+            href="#dinner"
+            role="tab"
+            aria-controls="dinner"
+            aria-selected="false"
+            >Dinner</a
+          >
+        </li>
+        <li class="nav-item" role="presentation">
+          <a
+            class="nav-link"
+            id="dessert-tab"
+            data-toggle="tab"
+            href="#dessert"
+            role="tab"
+            aria-controls="dessert"
+            aria-selected="false"
+            >Dessert</a
+          >
+        </li>
+      </ul>
+      <div class="tab-content" id="myTabContent">
+        <div
+          class="tab-pane fade show active"
+          id="breakfast"
+          role="tabpanel"
+          aria-labelledby="breakfast-tab"
+        >
+          <div class="row">
+            <div class="col-3">
+              <div
+                class="nav flex-column nav-pills"
+                id="v-pills-tab"
+                role="tablist"
+                aria-orientation="vertical"
+              >
+                <a
+                  class="nav-link active"
+                  id="v-pills-bf-1-tab"
+                  data-toggle="pill"
+                  href="#v-pills-bf-1"
+                  role="tab"
+                  aria-controls="v-pills-bf-1"
+                  aria-selected="true"
+                  >Eggs Benedict</a
+                >
+                <a
+                  class="nav-link"
+                  id="v-pills-bf-2-tab"
+                  data-toggle="pill"
+                  href="#v-pills-bf-2"
+                  role="tab"
+                  aria-controls="v-pills-bf-2"
+                  aria-selected="false"
+                  >Pancakes</a
+                >
+                <a
+                  class="nav-link"
+                  id="v-pills-bf-3-tab"
+                  data-toggle="pill"
+                  href="#v-pills-bf-3"
+                  role="tab"
+                  aria-controls="v-pills-bf-3"
+                  aria-selected="false"
+                  >Porridge</a
+                >
+                <a
+                  class="nav-link"
+                  id="v-pills-bf-4-tab"
+                  data-toggle="pill"
+                  href="#v-pills-bf-4"
+                  role="tab"
+                  aria-controls="v-pills-bf-4"
+                  aria-selected="false"
+                  >Croissant</a
+                >
+              </div>
+            </div>
+            <div class="col-9">
+              <div class="tab-content" id="v-pills-tabContent">
+                <div
+                  class="tab-pane fade show active"
+                  id="v-pills-bf-1"
+                  role="tabpanel"
+                  aria-labelledby="v-pills-bf-1-tab"
+                >
+                  <h1 class="text-center">Eggs Benedict</h1>
+                  <img
+                    src="img/bf-1.jpg"
+                    alt="Eggs Benedict"
+                    height="auto"
+                    class="rounded img-fluid"
+                  />
+                  <table class="table mt-2">
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">First</th>
+                        <th scope="col">Last</th>
+                        <th scope="col">Handle</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td>Larry</td>
+                        <td>the Bird</td>
+                        <td>@twitter</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <p class="lead text-center">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Qui nihil odit obcaecati eos, aliquid culpa eaque soluta
+                    sequi ad in doloribus accusamus totam, tempore odio
+                    provident doloremque id ex sapiente!
+                  </p>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="v-pills-bf-2"
+                  role="tabpanel"
+                  aria-labelledby="v-pills-bf-2-tab"
+                >
+                  <h1 class="text-center">Pancakes</h1>
+                  <img
+                    src="img/bf-2.jpg"
+                    alt="Pancakes"
+                    height="auto"
+                    class="rounded img-fluid"
+                  />
+                  <table class="table mt-2">
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">First</th>
+                        <th scope="col">Last</th>
+                        <th scope="col">Handle</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td>Larry</td>
+                        <td>the Bird</td>
+                        <td>@twitter</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <p class="lead text-center">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Qui nihil odit obcaecati eos, aliquid culpa eaque soluta
+                    sequi ad in doloribus accusamus totam, tempore odio
+                    provident doloremque id ex sapiente!
+                  </p>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="v-pills-bf-3"
+                  role="tabpanel"
+                  aria-labelledby="v-pills-bf-3-tab"
+                >
+                  <h1 class="text-center">Porridge</h1>
+                  <img
+                    src="img/bf-3.jpg"
+                    alt="Porridge"
+                    height="auto"
+                    class="rounded img-fluid"
+                  />
+                  <table class="table mt-2">
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">First</th>
+                        <th scope="col">Last</th>
+                        <th scope="col">Handle</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td>Larry</td>
+                        <td>the Bird</td>
+                        <td>@twitter</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <p class="lead text-center">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Qui nihil odit obcaecati eos, aliquid culpa eaque soluta
+                    sequi ad in doloribus accusamus totam, tempore odio
+                    provident doloremque id ex sapiente!
+                  </p>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="v-pills-bf-4"
+                  role="tabpanel"
+                  aria-labelledby="v-pills-bf-4-tab"
+                >
+                  <h1 class="text-center">Croissant</h1>
+                  <img
+                    src="img/bf-4.jpg"
+                    alt="Croissant"
+                    height="auto"
+                    class="rounded img-fluid"
+                  />
+                  <table class="table mt-2">
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">First</th>
+                        <th scope="col">Last</th>
+                        <th scope="col">Handle</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td>Larry</td>
+                        <td>the Bird</td>
+                        <td>@twitter</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="tab-pane fade"
+          id="lunch"
+          role="tabpanel"
+          aria-labelledby="lunch-tab"
+        >
+          ...
+        </div>
+        <div
+          class="tab-pane fade"
+          id="dinner"
+          role="tabpanel"
+          aria-labelledby="dinner-tab"
+        >
+          ...
+        </div>
+        <div
+          class="tab-pane fade"
+          id="dessert"
+          role="tabpanel"
+          aria-labelledby="dessert-tab"
+        >
+          ...
+        </div>
+      </div>
+    </main>
+    <!--Footer-->
+    <footer class="footer bg-primary">
+      <div class="container text-center">
+        <span class="text-white">&copy; Cookbook</span>
+      </div>
+    </footer>
     <!--Bootstrap JS-->
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
