@@ -46,4 +46,4 @@ https://getbootstrap.com/docs/4.5/getting-started/introduction/
 - Julia - Breakfast
 - Kauser - Lunch
 - Lucas - Dinner
-- Jorge - Home/About
+- Jorge - Home[done]/About
