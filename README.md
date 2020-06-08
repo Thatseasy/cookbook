@@ -1,4 +1,4 @@
-# Cookbook - A HTML5/CSS3 excersise
+# Cookbook - An HTML5/CSS3 excersise
 
 To install this project clone the repo
 
