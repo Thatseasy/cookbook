@@ -24,3 +24,51 @@ img {
 .card {
   padding: 0 !important;
 }
+/* Style all font awesome icons */
+.fa {
+  padding: 20px;
+  margin: 0 2px;
+  font-size: 30px;
+  text-align: center;
+  width: 70px;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  background: #3b5998;
+  color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+  background: #55acee;
+  color: white;
+}
+
+/*Instagram*/
+.fa-instagram {
+  background: #c13584;
+  color: white;
+}
+
+/*Youtube*/
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+/*Github*/
+.fa-github {
+  background: #2c4762;
+  color: white;
+}
